@@ -3,6 +3,7 @@
     --primary:#38d16a;
     --secondary:#f54ea2;
     --tertiary:#6185a5;
+    --dark:#08071C;
     --blanco:#fff;
     --verde:#38d16a;
     --negro:#000;
@@ -222,3 +223,72 @@ p{
     color:var(--tertiary);
 }
 /*Home*/
+/*Branding*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.branding{
+    background:var(--dark);
+    color: var(--blanco);
+    margin-top: 35px;
+    padding: 80px 0;
+}
+.branding h1{
+    font-size: 40px;
+    color: var(--primary);
+    margin-right: 20px;
+}
+.branding h2{
+    font-weight: 500;
+    font-size: 22px;
+    margin: 10px 0 20px 0;
+}
+.branding p{
+    color: var(--blanco);
+    opacity: 0.7;
+}
+
+/*Branding*/
+/*About*/
+.mtop{
+    margin-top: 50px;
+}
+h3{
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin: 20px 0;
+}
+.heading h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.about p{
+    margin-bottom: 20px;
+
+}
+.about .left{
+    padding-right: 30px;
+}
+.about .img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.about .img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    right: 0;
+    background-color: var(--negro);
+    width: 600px;
+    height: 86vh;
+    z-index: -1;
+}
+/*About*/
