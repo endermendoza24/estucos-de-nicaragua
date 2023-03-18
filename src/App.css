@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 :root{
+    --primary:#38d16a;
+    --secondary:#f54ea2;
+    --tertiary:#6185a5;
     --blanco:#fff;
     --verde:#38d16a;
+    --negro:#000;
+    --facebook:#4267b2;
+    --twitter:#1DA1F2;
+    --youtube:#ff0000;
+    --pinterest:#E60023;
+    --github:#171515;
 }
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Rubik', sans-serif;
@@ -42,7 +54,7 @@ header ul li a{
     transition: 0.5s;
 }
 header ul li a:hover{
-    color: var(--verde);
+    color: var(--primary);
     font-weight: 500;
 }
 .HeaderIcon{
@@ -74,7 +86,139 @@ header ul li a:hover{
         position: absolute;
         display: block;
         background-color: var(--blanco);
-
+        left: 50px;
+        top: 75px;
+        transition: 0.5s;
+        width: 100%;
+        height: 30vh;
+        z-index: 5;
+    }
+    .nav-links-sidebar{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    header ul li{
+        margin-bottom: 30px;
+    }
+    .navbar-items-icon{
+        display: block;
+        position: absolute;
+        right: 30px;
+        color:var(--negro);
+        border: 1px solid var(--negro);
+        padding:5px 10px;
     }
 }
 /*Header*/
+/*Home*/
+.left, .right{
+    width: 50%;
+    position: relative;
+}
+.flex{
+    display: flex;
+}
+.topMargin{
+    margin-top: 80px;
+}
+.home{
+    height: 90vh;
+}
+.home .img{
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+.home img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90vh;
+    width: 100%;
+    object-fit: contain;
+    transform: scale(1.1);
+}
+home h1{
+    font-size: 60px;
+
+}
+.socialIcon i{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.socialIcon i:hover{
+    color: var(--blanco);
+}
+.facebook{
+    color: var(--facebook);
+    border: 1px solid var(--facebook);
+}
+.facebook:hover{
+    background-color: var(--facebook);
+}
+.youtube{
+    color:var(--youtube);
+    border: var(--youtube) 1px solid;
+}
+.youtube:hover{
+    background-color: var(--youtube);
+}
+.twitter{
+    color: var(--twitter);
+    border: 1px solid var(--twitter);
+}
+.twitter:hover{
+    background-color: var(--twitter);
+}
+.pinterest{
+    color: var(--pinterest);
+    border: 1px solid var(--pinterest);
+}
+.pinterest:hover{
+    background-color: var(--pinterest);
+}
+.github{
+    color: var(--github);
+    border: 1px solid var(--github);
+}
+.github:hover{
+    background-color: var(--github);
+}
+button{
+    background:none;
+    outline: none;
+    border: none;
+    color: var(--blanco);
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.primary-btn{
+    padding: 15px 40px;
+    background: var(--primary);
+ }
+.primary-btn:hover{
+    background: var(--secondary);
+    box-shadow: 0 13px 27px 0 rgb(245 78 162 /25%);
+}
+.home .right{
+    margin-top: 15%;
+}
+.home .socialIcon{
+    margin: 30px 0;
+}
+.home p{
+    margin-bottom: 20px;
+}
+p{
+    color:var(--tertiary);
+}
+/*Home*/
