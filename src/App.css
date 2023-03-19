@@ -20,15 +20,6 @@
     --text-color: #333;
 }
 
-.dark-mode {
-    --background-color: #333;
-    --text-color: #fff;
-}
-
-.theme {
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
 
 * {
     padding: 0;
