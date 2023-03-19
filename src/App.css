@@ -1,72 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
-:root{
-    --primary:#38d16a;
-    --secondary:#f54ea2;
-    --tertiary:#6185a5;
-    --dark:#08071C;
-    --blanco:#fff;
-    --verde:#38d16a;
-    --negro:#000;
-    --facebook:#4267b2;
-    --twitter:#1DA1F2;
-    --youtube:#ff0000;
-    --pinterest:#E60023;
-    --github:#171515;
+
+:root {
+    --primary: #38d16a;
+    --secondary: #f54ea2;
+    --tertiary: #6185a5;
+    --dark: #08071C;
+    --amarillo: #f8f9fe;
+    --blanco: #fff;
+    --verde: #38d16a;
+    --negro: #000;
+    --facebook: #4267b2;
+    --twitter: #1DA1F2;
+    --youtube: #ff0000;
+    --pinterest: #E60023;
+    --github: #171515;
 }
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Rubik', sans-serif;
 }
-.container{
+
+.container {
     max-width: 80%;
     margin: auto;
 }
-.flex{
+
+.flex {
     display: flex;
     justify-content: space-between;
 }
-ul{
+
+ul {
     list-style: none;
 }
+
 a {
     text-decoration: none;
     color: #000;
 }
+
 /*Header*/
-header{
+header {
     padding: 20px 0;
 }
-header ul{
+
+header ul {
     display: inline-block;
 }
-header ul li{
+
+header ul li {
     display: inline-block;
     margin-left: 30px;
 }
-header ul li a{
+
+header ul li a {
     font-weight: 500;
     transition: 0.5s;
 }
-header ul li a:hover{
+
+header ul li a:hover {
     color: var(--primary);
     font-weight: 500;
 }
-.HeaderIcon{
+
+.HeaderIcon {
     margin-left: 20px;
     transition: 0.5s;
 }
-.navbar-items-icon{
+
+.navbar-items-icon {
     color: #000;
     display: none;
 }
-.header.active{
+
+.header.active {
     position: relative;
     top: 0;
     left: 0;
@@ -75,15 +92,18 @@ header ul li a:hover{
     width: 100%;
     z-index: 10;
 }
-@media screen and (max-width: 768px){
-    header .icon{
+
+@media screen and (max-width: 768px) {
+    header .icon {
         display: none;
 
     }
-    .nav-links{
+
+    .nav-links {
         display: none;
     }
-    .nav-links-sidebar{
+
+    .nav-links-sidebar {
         position: absolute;
         display: block;
         background-color: var(--blanco);
@@ -94,44 +114,53 @@ header ul li a:hover{
         height: 30vh;
         z-index: 5;
     }
-    .nav-links-sidebar{
+
+    .nav-links-sidebar {
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
     }
-    header ul li{
+
+    header ul li {
         margin-bottom: 30px;
     }
-    .navbar-items-icon{
+
+    .navbar-items-icon {
         display: block;
         position: absolute;
         right: 30px;
-        color:var(--negro);
+        color: var(--negro);
         border: 1px solid var(--negro);
-        padding:5px 10px;
+        padding: 5px 10px;
     }
 }
+
 /*Header*/
 /*Home*/
-.left, .right{
+.left, .right {
     width: 50%;
     position: relative;
 }
-.flex{
+
+.flex {
     display: flex;
 }
-.topMargin{
+
+.topMargin {
     margin-top: 80px;
 }
-.home{
+
+.home {
     height: 90vh;
 }
-.home .img{
+
+.home .img {
     height: 90vh;
     width: 100%;
     position: relative;
 }
-.home img{
+
+.home img {
     position: absolute;
     top: 0;
     left: 0;
@@ -140,11 +169,13 @@ header ul li a:hover{
     object-fit: contain;
     transform: scale(1.1);
 }
-home h1{
+
+home h1 {
     font-size: 60px;
 
 }
-.socialIcon i{
+
+.socialIcon i {
     width: 35px;
     height: 35px;
     text-align: center;
@@ -154,46 +185,58 @@ home h1{
     transition: 0.5s;
     cursor: pointer;
 }
-.socialIcon i:hover{
+
+.socialIcon i:hover {
     color: var(--blanco);
 }
-.facebook{
+
+.facebook {
     color: var(--facebook);
     border: 1px solid var(--facebook);
 }
-.facebook:hover{
+
+.facebook:hover {
     background-color: var(--facebook);
 }
-.youtube{
-    color:var(--youtube);
+
+.youtube {
+    color: var(--youtube);
     border: var(--youtube) 1px solid;
 }
-.youtube:hover{
+
+.youtube:hover {
     background-color: var(--youtube);
 }
-.twitter{
+
+.twitter {
     color: var(--twitter);
     border: 1px solid var(--twitter);
 }
-.twitter:hover{
+
+.twitter:hover {
     background-color: var(--twitter);
 }
-.pinterest{
+
+.pinterest {
     color: var(--pinterest);
     border: 1px solid var(--pinterest);
 }
-.pinterest:hover{
+
+.pinterest:hover {
     background-color: var(--pinterest);
 }
-.github{
+
+.github {
     color: var(--github);
     border: 1px solid var(--github);
 }
-.github:hover{
+
+.github:hover {
     background-color: var(--github);
 }
-button{
-    background:none;
+
+button {
+    background: none;
     outline: none;
     border: none;
     color: var(--blanco);
@@ -202,85 +245,102 @@ button{
     transition: 0.5s;
     cursor: pointer;
 }
-.primary-btn{
+
+.primary-btn {
     padding: 15px 40px;
     background: var(--primary);
- }
-.primary-btn:hover{
+}
+
+.primary-btn:hover {
     background: var(--secondary);
     box-shadow: 0 13px 27px 0 rgb(245 78 162 /25%);
 }
-.home .right{
+
+.home .right {
     margin-top: 15%;
 }
-.home .socialIcon{
+
+.home .socialIcon {
     margin: 30px 0;
 }
-.home p{
+
+.home p {
     margin-bottom: 20px;
 }
-p{
-    color:var(--tertiary);
+
+p {
+    color: var(--tertiary);
 }
+
 /*Home*/
 /*Branding*/
-.grid{
+.grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
-.branding{
-    background:var(--dark);
+
+.branding {
+    background: var(--dark);
     color: var(--blanco);
     margin-top: 35px;
     padding: 80px 0;
 }
-.branding h1{
+
+.branding h1 {
     font-size: 40px;
     color: var(--primary);
     margin-right: 20px;
 }
-.branding h2{
+
+.branding h2 {
     font-weight: 500;
     font-size: 22px;
     margin: 10px 0 20px 0;
 }
-.branding p{
+
+.branding p {
     color: var(--blanco);
     opacity: 0.7;
 }
 
 /*Branding*/
 /*About*/
-.mtop{
+.mtop {
     margin-top: 50px;
 }
-h3{
+
+h3 {
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
     color: var(--primary);
     margin: 20px 0;
 }
-.heading h1{
+
+.heading h1 {
     font-size: 30px;
     margin-bottom: 30px;
 }
-.about p{
+
+.about p {
     margin-bottom: 20px;
 
 }
-.about .left{
+
+.about .left {
     padding-right: 30px;
 }
-.about .img{
+
+.about .img {
     position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-.about .img::after{
+
+.about .img::after {
     content: '';
     position: absolute;
     top: 0;
@@ -291,4 +351,46 @@ h3{
     height: 86vh;
     z-index: -1;
 }
+
 /*About*/
+/*services*/
+.services {
+    text-align: center;
+    background-color: var(--amarillo);
+    padding: 50px 0;
+}
+
+.services .box {
+    text-align: left;
+}
+
+.services img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.services .text {
+    background-color: var(--blanco);
+    box-shadow: 0 5px 20px 0 rgba(0 0 0 /6%);
+    padding: 30px;
+    margin: 20px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 1;
+}
+
+.services .text h2 {
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/*services*/
+/*wrapper*/
+.wrapper .container {
+    max-width: 40%;
+    margin: auto;
+}
+
+/*wrapper*/
