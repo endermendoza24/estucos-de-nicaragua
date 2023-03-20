@@ -9,10 +9,12 @@ import Service from "../home/services/Service";
 import Footer from "../home/Footer";
 import Blog from "../home/work/blog/Blog";
 import Work from "../home/work/Work";
+import ThemeSwitcher from "../../ThemeSwitcher";
 
 export default function HomePages() {
 	return (
 		<>
+			<ThemeSwitcher/>
 			<Home/>
 			<Branding/>
 			<About/>
