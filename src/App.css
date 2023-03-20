@@ -16,8 +16,8 @@
     --youtube: #ff0000;
     --pinterest: #E60023;
     --github: #171515;
-    --background-color: #fff;
-    --text-color: #333;
+    --background-color: #d5d5d5;
+    --texto-fondo:#e5e5e5;
 }
 
 
@@ -30,9 +30,11 @@
 body {
     font-family: "Rubik", sans-serif;
     background-color: var(--background-color);
-    color: var(--text-color);
+    color: var(--negro);
 }
-
+.icon-button{
+    color: var(--negro) !important;
+}
 
 .container {
     max-width: 80%;
@@ -48,9 +50,10 @@ ul {
     list-style: none;
 }
 
+
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--negro);
 }
 
 /*Header*/
@@ -115,7 +118,6 @@ header ul li a:hover {
         top: 75px;
         transition: 0.5s;
         width: 100%;
-        height: 30vh;
         z-index: 5;
     }
 
@@ -278,7 +280,7 @@ button {
 }
 
 p {
-    color: var(--tertiary);
+    color: var(--negro);
 }
 
 /*Home*/
@@ -298,7 +300,6 @@ p {
 
 .branding h1 {
     font-size: 40px;
-    color: var(--primary);
     margin-right: 20px;
 }
 
@@ -365,10 +366,12 @@ h3 {
 /*services*/
 .services {
     text-align: center;
-    background-color: var(--amarillo);
+    background-color: var(--primary);
     padding: 50px 0;
 }
-
+.services .container .heading{
+    color: var(--blanco);
+}
 .services .box {
     text-align: left;
 }
@@ -388,7 +391,14 @@ h3 {
     position: relative;
     z-index: 1;
 }
-
+ h3{
+    color: #000;
+    font-weight: 700;
+    font-size:18px;
+}
+.work .heading h2{
+    color: #000;
+}
 .services .text h2 {
     font-weight: 500;
     font-size: 22px;
@@ -503,6 +513,7 @@ h3 {
     color: var(--blanco);
     width: 100%;
     text-align: center;
+    margin: 10px 0;
 }
 
 .work .heading {
@@ -613,7 +624,6 @@ footer {
     padding: 100px 0 0 0;
     color: var(--blanco);
     overflow: hidden;
-    margin-top: 10px;
 }
 
 footer p {
@@ -642,7 +652,7 @@ footer li:before {
     vertical-align: middle;
     line-height: 10px;
     margin-right: 20px;
-    color: #38d16a;
+    color: var(--blanco);
 }
 
 footer .box p {
@@ -651,7 +661,7 @@ footer .box p {
 }
 
 footer span {
-    color: var(--primary);
+    color: var(--blanco);
     opacity: 1;
 }
 
@@ -661,7 +671,7 @@ footer .icon {
 }
 
 footer .icon i {
-    color: var(--primary);
+    color: var(--blanco);
     margin-right: 20px;
     width: 20px;
     height: 20px;
@@ -670,7 +680,7 @@ footer .icon i {
 .legal {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid var(--blanco);;
     margin-top: 70px;
     padding: 20px 0;
 }

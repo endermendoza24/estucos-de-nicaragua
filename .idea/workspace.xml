@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62858486-8795-4a4b-9459-db14409ab872" name="Changes" comment="Terminado sitio, aún hay que mejorar varias cosas">
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pagecontent/HomePages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagecontent/HomePages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ThemeSwitcher.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThemeSwitcher.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/ThemeSwitcher.jsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -72,7 +75,7 @@
       <workItem from="1679102606987" duration="2963000" />
       <workItem from="1679154615714" duration="4435000" />
       <workItem from="1679244373279" duration="1232000" />
-      <workItem from="1679245701384" duration="19572000" />
+      <workItem from="1679245701384" duration="20088000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial">
       <created>1679074155239</created>
@@ -128,6 +131,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit inicial" />

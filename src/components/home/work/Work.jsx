@@ -50,7 +50,7 @@ const Work = () => {
 			<section className="work">
 				<div className="heading">
 					<h3>My WORKS</h3>
-					<h1>Some of my competeid works</h1>
+					<h2>Some of my competeid works</h2>
 				</div>
 				<div className="content">
 					{
@@ -59,7 +59,7 @@ const Work = () => {
 								<>
 									<div className="box">
 										<div className="img">
-											<img src={val.cover} alt={val.title}/>
+											<img src={val.cover} alt={val.title} />
 										</div>
 										<div className="overlay">
 											<div className="text">

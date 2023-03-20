@@ -9,7 +9,7 @@ const Footer = () => {
 			<footer>
 				<div className="container grid1">
 					<div className="box">
-						<img src={logo1} alt="Logo"/>
+						<img src={logo1} alt="Logo" />
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 							labore et dolore magna aliqua.</p>
 						<div className="socialIcon">
@@ -66,9 +66,9 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="legal container">
-					<p>Copyright {currentYear}. All rights reserved.</p>
+					<p>&copy;Copyright {currentYear}. All rights reserved.</p>
 					<label>
-						Design & Developed by <span>GorkCoder</span>
+						Design & Developed by <span>Endersson</span>
 					</label>
 				</div>
 			</footer>

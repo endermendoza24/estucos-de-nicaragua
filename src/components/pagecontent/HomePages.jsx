@@ -14,17 +14,16 @@ import ThemeSwitcher from "../../ThemeSwitcher";
 export default function HomePages() {
 	return (
 		<>
-			<ThemeSwitcher/>
-			<Home/>
-			<Branding/>
-			<About/>
-			<Service/>
-			<Wrapper/>
-			<Skill/>
-			<WrapperOne/>
-			<Blog/>
-			<Work/>
-			<Footer/>
+			<Home />
+			<Branding />
+			<About />
+			<Service />
+			<Wrapper />
+			<Skill />
+			<WrapperOne />
+			<Blog />
+			<Work />
+			<Footer />
 		</>
 	);
 }
